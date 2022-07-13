@@ -1,0 +1,10 @@
+{
+  "name": "depnot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matheus Trindade",
+  "license": "MIT",
+  "bin": {
+    "depnot": "index.js"
+  }
+}
