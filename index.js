@@ -26,7 +26,7 @@ let dependenciesStr = Object.keys(packageObj.dependencies).reduce(
 );
 
 if (!!withDevDependencies) {
-  dependenciesStr = Object.keys(packageObj.devDependencies).reduce(
+  dependenciesStr += Object.keys(packageObj.devDependencies).reduce(
     (acc, curr) => {
       if (curr.includes(libname)) {
         acc += `${curr} `;
@@ -34,7 +34,7 @@ if (!!withDevDependencies) {
 
       return acc;
     },
-    ""
+    " "
   );
 }
 
